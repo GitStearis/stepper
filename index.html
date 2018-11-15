@@ -11,28 +11,19 @@
     <div class="stepper">
       <div class="step-container">
         <div class="step" id="step">
-          <h1 class="question">Выберите марку автомобиля</h1>
-          <form>
-            <div class="answer">
-              <input type="radio" name="brand" value="saab" checked>
-              <p>Saab</p>
-            </div>
-            <div class="answer">
-              <input type="radio" name="brand" value="toyota">
-              <p>Toyota</p>
-            </div>
-            <div class="answer">
-                <input type="radio" name="brand" value="ford">
-              <p>Ford</p>
-            </div>
-          </form> 
         </div>
       </div>
-      <div class="buttons">
-        <button class="button back" id="back" disabled>Back</button>
+      <div class="buttons" id="buttons">
+        <button class="button back disabled" id="back">Back</button>
         <button class="button next" id="next">Next</button>
       </div>
     </div>
   </div>
+
+  <script src="js/data.js"></script>
+  <script src="js/stepper.js"></script>
+  <script src="js/stepBuilder.js"></script>
+  <script src="js/stepperService.js"></script>
+  <script src="js/index.js"></script>
 </body>
 </html>

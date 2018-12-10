@@ -1,1 +1,1 @@
-export { StepComponent as default } from './StepComponent';
+export { default } from './StepComponent';

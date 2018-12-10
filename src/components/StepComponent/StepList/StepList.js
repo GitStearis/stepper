@@ -1,18 +1,14 @@
 import React from 'react';
 
-import styled from 'styled-components';
+import StepContent from '../StepContent';
 
-
-const StepContent = styled.div`
-
-`;
 
 const StepList = (props) => {
   return (
     <StepContent>
-      {props.children ? props.children[props.currentStep] : null}
+      { props.children ? props.children[props.currentStep] : null }
     </StepContent>
   );
 }
 
-export { StepList };
+export default StepList;

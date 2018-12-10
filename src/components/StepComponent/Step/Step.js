@@ -40,7 +40,7 @@ const Text = styled.p`
 class Step extends Component {
 
   state = {
-    currentAnswer: this.props.defaultOption || ''
+    currentAnswer: this.props.defaultOption ? this.props.defaultOption.answer : ''
   }
   
   handleAnswerSelection = (event) => {
@@ -67,7 +67,7 @@ class Step extends Component {
               return (
                 <PossibleAnswer key={possibleAnswer}>
                   <input 
-                    type="radio"  
+                    type='radio'  
                     value={possibleAnswer} 
                     checked={this.isChecked(possibleAnswer)}
                     onChange={this.handleAnswerSelection}

@@ -4,11 +4,11 @@ import styled from 'styled-components';
 
 const SummaryContainer = styled.div`
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   flex-wrap: nowrap;
-  justify-content: flex-start;
+  justify-content: center;
   align-content: stretch;
-  align-items: flex-start;
+  align-items: center;
 
   margin-top: 1em;
 `;
@@ -22,11 +22,12 @@ const Line = styled.p`
 `;
 
 const Summary = (props) => {
+  
   return (
     <SummaryContainer>
-      <Title>Summary</Title>
-      {props.answers.map(answer => {
-          return <Line>{answer}</Line>
+      <Title>Итоги</Title>
+      {props.data.map(datum => {
+          return <Line>{`${datum.meta}: ${datum.answer}`}</Line>
         })}
     </SummaryContainer>
   );

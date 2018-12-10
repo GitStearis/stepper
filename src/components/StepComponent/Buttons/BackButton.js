@@ -8,19 +8,20 @@ const BackButton = styled.button`
   border: none;
   border-radius: 0.5em;
 
-  background-color: #bbb;
+  background-color: #F2BE3C;
 
-  color: #222;
+  color: #222222;
   font-family: 'Consolas', Arial, Helvetica, sans-serif;
 
   &:focus {
     outline: none;
   }
   &:hover {
-    background-color: #ddd;
+    background-color: #FFC83F;
+    cursor: pointer;
   }
   &:active {
-    background-color: #ccc;
+    background-color: #E5B439;
   }
 
   ${props => props.disabled && css`

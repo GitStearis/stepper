@@ -8,19 +8,20 @@ const NextButton = styled.button`
   border: none;
   border-radius: 0.5em;
 
-  background-color: rgb(119, 202, 72);
+  background-color: #6ECB68;
 
-  color: #222;
+  color: #222222;
   font-family: 'Consolas', Arial, Helvetica, sans-serif;
 
   &:focus {
     outline: none;
   }
   &:hover {
-    background-color: rgb(123, 206, 75);
+    background-color: #75D86E;
+    cursor: pointer;
   }
   &:active {
-    background-color: rgb(114, 189, 70);
+    background-color: #66BC60;
   }
 
   ${props => props.disabled && css`

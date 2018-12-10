@@ -1,0 +1,1 @@
+export { StepComponent as default } from './StepComponent';
